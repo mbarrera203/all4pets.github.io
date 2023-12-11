@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--Iconos-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <!---Header-->
+     <header>
+        <div class="nav container">
+            <!--Menu Icon-->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!--Logo-->
+            <a href="index.html" class="logo"><img src="./media/logo.png" alt=""></a>
+            <!--Navbar-->
+            <ul class="navbar">
+                <li><a href="./Adopta.html" class="nav-link">Adopta</a></li>
+                <li><a href="./nosotros.html" class="nav-link">Sobre Nostros</a></li>
+                <li><a href="./log.html" class="nav-link">Iniciar Sesion</a></li>
+            </ul>
+            <!--Carrito-->
+            <a href="cart.html">
+                <i class='bx bx-shopping-bag' id="cart-icon" data-quantity="0"></i>
+            </a>
+        </div>
+    </header>
+    <!--Carrito-->
+    <main>
+        
+        <div class="contenedor-carrito">
+            <h2 id="total-productos" class="titulo-principal">PRODUCTOS AGREGADOS AL CARRITO</h2>
+            <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio</p>
+            <button id="vl-inicio" class="vl-inicio"><a href="./index.html">Volver al inico</a></button>
+            <div id="carrito-productos" class="carrito-productos disabled">
+                <!--Esto se completa con el js-->
+            </div>
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="carrito-acciones-izquierda">
+                    <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar">Vaciar Carrito</button>
+                </div>
+                <div class="carrito-acciones-derecha">
+                    <div class="carrito-acciones-total">
+                        <p>Total:</p>
+                        <p class="total">$3000</p>
+                        <button id="pagar-btn" class="carrito-acciones-comprar">Comprar Ahora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/js/cart.js"></script> 
+</body>
+</html>
