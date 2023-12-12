@@ -388,7 +388,9 @@ i{
 @media(max-width:480px){
     .product-container {
         grid-template-columns: repeat(1, 1fr);
+        padding: 60px;
     }
+  
     .home{
         min-height: 400px;
     }
