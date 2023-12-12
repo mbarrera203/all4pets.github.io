@@ -288,6 +288,39 @@ i{
     border: none;
     background: transparent;
 }
+.categorias{
+    margin-left: -15px;
+    width:500px;
+}
+.cate-nav li{
+    background-color: var(--bg-color2);
+    color: black;
+    padding: 10px 15px;
+    display: block;
+    margin:20px 16px;
+    border-radius: 10px;
+}
+.cate-nav li ol{
+    transition: all 4s ease;
+    display:none;
+}
+.cate-nav li:hover > ol{
+    display: block;
+    
+}
+.boton-cate{
+    padding: 10px 20px;
+    
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 150px;
+  }
+  .boton-cate:hover {
+    background-color: var(--azulGris);
+  }
 
 @media(max-width:1200px) {
     .container {
